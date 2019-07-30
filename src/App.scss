@@ -1,0 +1,37 @@
+.container {
+    background: rgb(20, 170, 175);
+    width: max-content;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    .top {
+        display: flex;
+        flex-direction: column;
+        .display {
+            width: 98%;
+            height: 80px;
+            margin: 10px auto;
+            border-radius: 20px;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            background: rgba(0, 0, 0, 0.739);
+            font-size: 50px;
+        }
+    }
+    .App {
+        display: grid;
+        grid-template-columns: 90px 90px 90px 90px;
+        grid-template-rows: 80px 90px 90px 90px 90px;
+        grid-template-areas: 'C other percent div' 'one two three mult' 'four five six minus' 'seven eight nine plus' 'zero zero period equals';
+    }
+}
+
+.logo {
+    width: 25%;
+}
